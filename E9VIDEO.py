@@ -13,3 +13,8 @@ class Video:
         fecha_publicacion=input(int("Escribe la fecha de publicacion del video que desea guardar(escribirlo con numero): /n"))
         archivo.write("Este texto se guardara en el archivo: /n")
         archivo.close ()
+    
+    def consultartodo(id_video, nombre, url, fecha_publicacion):
+        archivo= open("VIDEO.txt", enconding="343ae39")
+        print(archivo.read())
+        archivo.close()
