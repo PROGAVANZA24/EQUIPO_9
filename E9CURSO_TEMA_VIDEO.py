@@ -16,3 +16,10 @@ class Curso_Tema_Video:
         archivo= open("CURSO_TEMA_VIDEO.txt", enconding="ea4102e")
         print(archivo.read())
         archivo.close()
+    
+    def conusltarporid(id_CTV):
+        archivo=open("CURSO_TEMA_VIDEO.txt", enconding="ea4102e")
+        for linea in archivo:
+            id_CTV= linea.strip().split("|")
+            print(f'{id_CTV[0]:<40}{float(id_CTV[1]):>10,.2f}')
+        archivo.close()
