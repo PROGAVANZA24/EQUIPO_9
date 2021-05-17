@@ -15,4 +15,9 @@ class TEMA:
         print(archivo.read())
         archivo.close()
     
-    
+    def conusltarporid(id_tema):
+        archivo=open("TEMA.txt", enconding="63da2cf")
+        for linea in archivo:
+            id_tema= linea.strip().split("|")
+            print(f'{id_tema[0]:<40}{float(id_tema[1]):>10,.2f}')
+        archivo.close()
