@@ -18,3 +18,10 @@ class Video:
         archivo= open("VIDEO.txt", enconding="343ae39")
         print(archivo.read())
         archivo.close()
+    
+    def conusltarporid(id_video):
+        archivo=open("VIDEO.txt", enconding="343ae39")
+        for linea in archivo:
+            id_video= linea.strip().split("|")
+            print(f'{id_video[0]:<40}{float(id_video[1]):>10,.2f}')
+        archivo.close()
