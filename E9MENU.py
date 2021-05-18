@@ -19,3 +19,9 @@ if (menuinicio)==1:
     RegistroTEMA=TEMA.consultartodo("","")
     print("A continuación se buscara cualquier registro por medio del id /n")
     RegistroTEMA=TEMA.conusltarporid("")
+    
+elif (menuinicio)==2:
+    print("Introduzca los datos que se le piden a continuación: /n")
+    RegistroVIDEO= Video.guardar("","")
+    print("Se mostrara el registro que se ha guardado /n")
+    RegistroVIDEO=Video.consultartodo("","")
