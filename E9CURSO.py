@@ -16,3 +16,10 @@ class Curso:
         archivo= open("CURSO.txt", enconding="6328e15")
         print(archivo.read())
         archivo.close()
+
+    def conusltarporid(id_curso):
+        archivo=open("CURSO.txt", enconding="6328e15")
+        for linea in archivo:
+            id_curso= linea.strip().split("|")
+            print(f'{id_curso[0]:<40}{float(id_curso[1]):>10,.2f}')
+        archivo.close()
