@@ -9,4 +9,10 @@ class Curso:
         id_curso=input(int("Escribe el id del curso que deasea guardar: /n"))
         descripcion=input("Escribe la descricion del curso que deasea guardar: /n")
         id_empleado=input(int("Escribe el id del empleado que deasea guardar: /n"))
-      
+        archivo.write("Este texto se guardara en el archivo /n")
+        archivo.close ()
+    
+    def consultartodo(id_curso, descripcion, id_empleado):
+        archivo= open("CURSO.txt", enconding="6328e15")
+        print(archivo.read())
+        archivo.close()
