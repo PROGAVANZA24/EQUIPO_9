@@ -25,3 +25,9 @@ elif (menuinicio)==2:
     RegistroVIDEO= Video.guardar("","")
     print("Se mostrara el registro que se ha guardado /n")
     RegistroVIDEO=Video.consultartodo("","")
+
+    print("A continuación se buscara cualquier registro por medio del id /n")
+    RegistroVIDEO=Video.conusltarporid("")
+elif (menuinicio)==3:
+    print("Introduzca los datos que se le piden a continuación: /n")
+    RegistroE9CURSO_TEMA_VIDEO= Curso_Tema_Video.guardar("","")
