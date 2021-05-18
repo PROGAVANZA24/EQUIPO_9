@@ -20,3 +20,5 @@ class Curso_Tema:
         archivo=open("CURSO_TEMA.txt", enconding="ea4102e")
         for linea in archivo:
             id_CT= linea.strip().split("|")
+            print(f'{id_CT[0]:<40}{float(id_CT[1]):>10,.2f}')
+        archivo.close()
