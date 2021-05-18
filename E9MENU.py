@@ -45,3 +45,8 @@ elif (menuinicio)==4:
 elif (menuinicio)==5:
     print("Introduzca los datos que se le piden a continuación: /n")
     RegistroE9CURSO= Curso.guardar("","")
+    print("Se mostrara el registro que se ha guardado /n")
+    RegistroE9CURSO=Curso.consultartodo("","")
+    print("A continuación se buscara cualquier registro por medio del id /n")
+    RegistroE9CURSO=Curso.conusltarporid("")
+elif (menuinicio)==6:
