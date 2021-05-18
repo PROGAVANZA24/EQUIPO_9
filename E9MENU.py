@@ -14,4 +14,8 @@ print("Almacenar datos de un Empleado [6] /n")
 menuinicio=int(input("Introdusca el numero que desea realizar /n"))
 if (menuinicio)==1:
     print("Introduzca los datos que se le piden a continuación: /n")
-    
+    RegistroTEMA= TEMA.guardar("","")
+    print("Se mostrara el registro que se ha guardado /n")
+    RegistroTEMA=TEMA.consultartodo("","")
+    print("A continuación se buscara cualquier registro por medio del id /n")
+    RegistroTEMA=TEMA.conusltarporid("")
