@@ -14,3 +14,9 @@ class Curso_Tema:
     def consultartodo(id_CT, id_curso, id_tema):
         archivo= open("CURSO_TEMA.txt", enconding="ea4102e")
         print(archivo.read())
+        archivo.close()
+
+    def conusltarporid(id_CT):
+        archivo=open("CURSO_TEMA.txt", enconding="ea4102e")
+        for linea in archivo:
+            id_CT= linea.strip().split("|")
