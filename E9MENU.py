@@ -9,3 +9,9 @@ print("Almacenar datos de un Tema [1] /nm")
 print("Almacenar datos de un Video [2] /n")
 print("Almacenar datos de un Curso, Tema, Video [3] /n")
 print("Almacenar datos de un Curso, Tema [4] /n")
+print("Almacenar datos de un Curso [5] /n")
+print("Almacenar datos de un Empleado [6] /n")
+menuinicio=int(input("Introdusca el numero que desea realizar /n"))
+if (menuinicio)==1:
+    print("Introduzca los datos que se le piden a continuación: /n")
+    
