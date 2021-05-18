@@ -16,3 +16,10 @@ class Empleado:
         archivo= open("EMPLEADO.txt", enconding="6328e15")
         print(archivo.read())
         archivo.close()
+
+    def conusltarporid(id_empleado):
+        archivo=open("EMPLEADO.txt", enconding="6328e15")
+        for linea in archivo:
+            id_empleado= linea.strip().split("|")
+            print(f'{id_empleado[0]:<40}{float(id_empleado[1]):>10,.2f}')
+        archivo.close()
