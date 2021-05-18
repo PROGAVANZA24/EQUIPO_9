@@ -4,6 +4,7 @@ from E9CURSO_TEMA_VIDEO import *
 from E9CURSO_TEMA import *
 from E9CURSO import *
 from E9EMPLEADO import *
+
 print("Bienvenido a nuestra aplicación que es lo que desea guardar /n")
 print("Almacenar datos de un Tema [1] /nm")
 print("Almacenar datos de un Video [2] /n")
@@ -19,13 +20,11 @@ if (menuinicio)==1:
     RegistroTEMA=TEMA.consultartodo("","")
     print("A continuación se buscara cualquier registro por medio del id /n")
     RegistroTEMA=TEMA.conusltarporid("")
-    
 elif (menuinicio)==2:
     print("Introduzca los datos que se le piden a continuación: /n")
     RegistroVIDEO= Video.guardar("","")
     print("Se mostrara el registro que se ha guardado /n")
     RegistroVIDEO=Video.consultartodo("","")
-
     print("A continuación se buscara cualquier registro por medio del id /n")
     RegistroVIDEO=Video.conusltarporid("")
 elif (menuinicio)==3:
@@ -50,8 +49,11 @@ elif (menuinicio)==5:
     print("A continuación se buscara cualquier registro por medio del id /n")
     RegistroE9CURSO=Curso.conusltarporid("")
 elif (menuinicio)==6:
-     print("Introduzca los datos que se le piden a continuación: /n")
+    print("Introduzca los datos que se le piden a continuación: /n")
     RegistroE9EMPLEADO= Empleado.guardar("","")
     print("Se mostrara el registro que se ha guardado /n")
     RegistroE9EMPLEADO=Empleado.consultartodo("","")
     print("A continuación se buscara cualquier registro por medio del id /n")
+    RegistroE9EMPLEADO=Empleado.conusltarporid("")
+else:
+    print("Digite una opción valida /n"), menuinicio
