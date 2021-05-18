@@ -9,5 +9,10 @@ class Curso_Tema:
         id_CT=input(int("Escribe el id del curso del tema que deasea guardar: /n"))
         id_curso=input(int("Escribe el id del curso que deasea guardar: /n"))
         id_tema=input(int("Escribe el id del tema que deasea guardar: /n"))
-        
+        archivo.write("Este texto se guardara en el archivo /n")
+        archivo.close ()
     
+    def consultartodo(id_CT, id_curso, id_tema):
+        archivo= open("CURSO_TEMA.txt", enconding="ea4102e")
+        print(archivo.read())
+        archivo.close()
