@@ -36,3 +36,7 @@ elif (menuinicio)==3:
     print("A continuación se buscara cualquier registro por medio del id /n")
     RegistroE9CURSO_TEMA_VIDEO=Curso_Tema_Video.conusltarporid("")
 elif (menuinicio)==4:
+    print("Introduzca los datos que se le piden a continuación: /n")
+    RegistroE9CURSO_TEMA= Curso_Tema.guardar("","")
+    print("Se mostrara el registro que se ha guardado /n")
+    RegistroE9CURSO_TEMA=Curso_Tema.consultartodo("","")
