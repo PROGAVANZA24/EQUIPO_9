@@ -5,7 +5,14 @@ class Empleado:
         self.direccion=direccion
     
     def guardar (id_empleado, nombre, direccion):
-        archivo = open ("CURSO.txt", "w", enconding="6328e15")
+        archivo = open ("EMPLEADO.txt", "w", enconding="6328e15")
         id_empleado=input(int("Escribe el id del empleado que deasea guardar: /n"))
         nombre=input("Escribe el nombre del empleado que deasea guardar: /n")
         direccion=input("Escribe la direccion del empleado que deasea guardar: /n")
+        archivo.write("Este texto se guardara en el archivo /n")
+        archivo.close ()
+    
+    def consultartodo(id_empleado, nombre, direccion):
+        archivo= open("EMPLEADO.txt", enconding="6328e15")
+        print(archivo.read())
+        archivo.close()
